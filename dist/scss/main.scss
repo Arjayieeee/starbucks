@@ -1,0 +1,16 @@
+@import "./01-variable";
+@import "./02-mixins";
+@import "./03-reset";
+@import "./04-base";
+@import "./05-grid";
+@import "./06-utilities";
+
+// components
+@import "./components/btn";
+@import "./components/links";
+// layout
+@import "./layout/header";
+// pages
+@import "./layout/landing";
+// footer
+@import "./layout/footer";

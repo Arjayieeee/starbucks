@@ -1,0 +1,127 @@
+.banner{
+    background-image: url("/dist/img/bgimg.jpeg");
+   background-size: cover;
+   background-position: 90%;
+   height: 40rem;
+    padding: 5rem 0;
+    @include mediaQuery($desktop){
+        height: 53rem;
+    }
+    .container{
+        @include mediaQuery($desktop){
+            max-width: 160rem;
+        }
+    }
+    &__wrapper
+        .branding{
+          padding: 8rem 1rem;
+          @include mediaQuery($desktop){
+            padding: 10rem 0;
+            // align-items: center;
+            // text-align: center;
+           
+           
+            
+        }
+            h1{
+                font-size: 4rem;
+                padding: 3rem 0;
+                color: $clr-dark-green;
+                line-height: 4.5rem;
+                @include mediaQuery($desktop){
+                font-size: 7rem;
+                padding: 6rem 0;
+                color: $clr-dark-green;
+                
+                }
+            }
+            a{
+                font-size: 1.5rem;
+                font-weight: 900;
+            }
+        }
+}
+
+
+.services{
+    background-color: #fff;
+    padding: 3rem 0;
+
+        .card{
+            @include mediaQuery($desktop){
+                @include centerAll;
+                padding: 0 10rem;
+                
+            }
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    height: 22rem;
+                    @include mediaQuery($desktop){
+                    width:100rem ;
+                    height: 20rem;
+                    
+                    }
+                }
+            
+            background: $clr-green;
+            &__content{
+                text-align: center;
+                color: #fff;
+                padding: 3rem .5rem;
+              
+                    h1{
+                        font-size:2.4rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        margin: 3rem 0;
+                    }
+                    a{
+                        font-size: 1.6rem;
+                        color: $clr-light;
+                    }
+            
+            }
+        }
+}
+
+#rich{
+    background-color: $clr-dark-green;
+    img{
+        height: 25rem;
+    }
+}
+
+#treats{
+    background-color: $clr-dark-green;
+    img{
+        height: 25rem;
+    }
+}
+#reusable{
+    background-color: $clr-light-green;
+    img{
+        height: 25rem;
+    }
+    &__content{
+        text-align: center;
+        color: #fff;
+        padding: 3rem .5rem;
+      
+            h1{
+                font-size:2.4rem;
+                color: $clr-dark-green;
+            }
+            p{
+                font-size: 1.6rem;
+                margin: 3rem 0;
+            }
+            a{
+                font-size: 1.6rem;
+                color: $clr-dark-green;
+            }
+    
+    }
+   
+}
